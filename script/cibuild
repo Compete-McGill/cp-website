@@ -11,7 +11,7 @@ set -e
 
 git clone https://${GH_TOKEN}@github.com/Compete-McGill/cp-website.git --branch gh-pages
 
-gulp build > /dev/null 2>&1
+gulp build 
 
 cp -r img scss css vendor js index.html cp-website/
 
@@ -20,10 +20,10 @@ cd cp-website
 # push
 git config user.email "president@compete-mcgill.ca"
 git config user.name "Compete McGill Bot"
-git add --all
+git add --all --quiet
 # force since in gitignore
-git add -f vendor/*
-git commit -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push -f  origin gh-pages
+git add -f vendor/* --quiet
+git commit -m "Travis #$TRAVIS_BUILD_NUMBER" --quiet
+git push -f  origin gh-pages --quiet
 git tag "releases/1.$TRAVIS_BUILD_NUMBER"
 git push -f --tags origin gh-pages
