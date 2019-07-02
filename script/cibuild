@@ -20,10 +20,10 @@ cd cp-website
 # push
 git config user.email "president@compete-mcgill.ca"
 git config user.name "Compete McGill Bot"
-git add --all --quiet
+git add --all 
 # force since in gitignore
-git add -f vendor/* --quiet
-git commit -m "Travis #$TRAVIS_BUILD_NUMBER" --quiet
-git push -f  origin gh-pages --quiet
+git add -f vendor/* 
+git commit --quiet -m "Travis #$TRAVIS_BUILD_NUMBER" 
+git push -f --quiet origin gh-pages 
 git tag "releases/1.$TRAVIS_BUILD_NUMBER"
 git push -f --tags origin gh-pages
