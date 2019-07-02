@@ -13,6 +13,10 @@ git clone https://${GH_TOKEN}@github.com/Compete-McGill/cp-website.git --branch 
 
 gulp build
 
+cp -r img scss css vendor js index.html cp-website/
+
+cd cp-website
+
 # push
 git config user.email "president@compete-mcgill.ca"
 git config user.name "Compete McGill Bot"
