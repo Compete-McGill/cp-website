@@ -11,7 +11,7 @@ set -e
 
 git clone https://${GH_TOKEN}@github.com/Compete-McGill/cp-website.git --branch gh-pages
 
-gulp build
+gulp build > /dev/null 2>&1
 
 cp -r img scss css vendor js index.html cp-website/
 
