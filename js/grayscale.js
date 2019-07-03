@@ -1,6 +1,17 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var toggleArrow = false;
+  $("#timeline-toggle").click(function(){
+    $("#timeline-img").collapse('toggle');
+    if(!toggleArrow){
+      $("#timeline-toggle").html("View Schedule &#9660;");
+    } else {
+      $("#timeline-toggle").html("View Schedule &#9654;");
+    }
+    toggleArrow = !toggleArrow;
+  });
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
