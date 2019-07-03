@@ -16,6 +16,9 @@ gulp build
 cp -r img scss css vendor js index.html favicon.png cp-website/
 
 cd cp-website
+touch CNAME
+echo "compete-mcgill.ca" > CNAME
+
 
 # push
 git config user.email "president@compete-mcgill.ca"
