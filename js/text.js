@@ -1,3 +1,5 @@
+//This file is currently not used by any component of our page. It is kept here for reference / use in the future.
+
 function _type_out(message, id) {
     return new Promise((resolve) => {
         let delay = 200;
