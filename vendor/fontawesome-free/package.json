@@ -52,8 +52,4 @@
   "main": "js/fontawesome.js",
   "style": "css/fontawesome.css",
   "license": "(CC-BY-4.0 AND OFL-1.1 AND MIT)"
-
-,"_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.10.0.tgz"
-,"_integrity": "sha512-XX16koDMY/tkJmec0VFfKF7RYZOze/203B1iyLnRaAySm3ZPhKaeyIpf73Yh8xhrMk3Fj4TeH3FC01qyFTyg8g=="
-,"_from": "@fortawesome/fontawesome-free@5.10.0"
 }
